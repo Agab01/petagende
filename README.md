@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Escopo e Requisitos Entregues
+## Escopo e Requisitos Entregues
 
 O sistema foi modelado para isolar as responsabilidades entre dois atores principais: **Atendente** (gestão de agenda e clientes) e **Operador Técnico** (execução de serviços). 
 
@@ -14,17 +14,17 @@ As seguintes funcionalidades foram implementadas com total fidelidade à documen
 - **Gestão de Cadastros:** Formulário restrito para cadastro de Tutores, Pets e anotações médicas (alergias).
 - **Consulta de Agenda:** Painel exclusivo para os profissionais técnicos visualizarem a carga de trabalho do dia.
 
-### ⭐ Requisito Funcional Primário (UC02 - Prevenção de Conflitos)
+### Requisito Funcional Primário (UC02 - Prevenção de Conflitos)
 - **Regra de Negócio:** O sistema impede ativamente o agendamento de dois animais para o mesmo profissional técnico no exato mesmo horário.
 - **Implementação:** Validação arquitetada na camada `Service` (Spring Boot), interceptando e bloqueando a transação antes da persistência no banco, retornando alerta visual na interface (Erro 400).
 
-### ⭐ Requisito Funcional Secundário (UC04 - Notificação)
+### Requisito Funcional Secundário (UC04 - Notificação)
 - **Regra de Negócio:** Ao concluir um serviço, o tutor deve ser notificado.
 - **Implementação:** Botão de conclusão na interface do técnico que realiza uma requisição `PATCH`, atualiza o status via JPA e simula o disparo de integração via rotina no Back-end.
 
 ---
 
-## 🛠️ Stack Tecnológica
+## Stack Tecnológica
 
 O projeto foi construído seguindo o padrão MVC e as melhores práticas de Engenharia de Software:
 
@@ -35,7 +35,7 @@ O projeto foi construído seguindo o padrão MVC e as melhores práticas de Enge
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 1. Clone este repositório em seu terminal:
    ```bash
